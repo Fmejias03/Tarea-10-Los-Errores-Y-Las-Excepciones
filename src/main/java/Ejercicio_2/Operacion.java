@@ -25,5 +25,21 @@ public class Operacion {
         return (int) resultado;
     }
 
+    public static int dividir(int a, int b) throws DesbordaCapacidadExcepcion {
+        long resultado = (long) a / (long) b;
+        if (resultado > Integer.MAX_VALUE || resultado < Integer.MIN_VALUE) {
+            throw new DesbordaCapacidadExcepcion("El resultado de la división excede la capacidad de un entero");
+        }
+        return (int) resultado;
+    }
+
+    public static int raizCuadrada(int a) throws DesbordaCapacidadExcepcion {
+        long resultado = (long) Math.sqrt(a);
+        if (resultado > Integer.MAX_VALUE || resultado < Integer.MIN_VALUE) {
+            throw new DesbordaCapacidadExcepcion("El resultado de la raiz cuadrada excede la capacidad de un entero");
+        }
+        return (int) resultado;
+    }
+
 
 }
