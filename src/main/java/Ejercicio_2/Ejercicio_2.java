@@ -13,8 +13,4 @@ a. Creación de una clase DesbordaCapacidadExcepcion*/
 
 }
 
-public class DesbordaCapacidadExcepcion{
-    public DesbordaCapacidadExcepcion(){
-        System.out.println("El resultado desborda la capacidad de esta calculadora");
-    }
-}
+
